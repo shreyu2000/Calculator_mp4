@@ -10,14 +10,14 @@
     <body>
 		<div class="main-container">
 			<div id="result-box" class="container">
-				<input class="output-field" type="text" dir="ltr" placeholder="0" />
+				<input id="display" type="text" dir="ltr" placeholder="0" />
 			</div>
 			<div id="calc-buttons" class="container">
 				<div class="row-1 row">
 					<button class="button">7</button>
-					<button class="button">5</button>
+					<button class="button">8</button>
 					<button class="button">9</button>
-					<button class="button delete">Del</button>
+					<button class="button delete " id="delete">Del</button>
 				</div>
 				<div class="row-2 row">
 					<button class="button">4</button>
@@ -35,11 +35,11 @@
 					<button class="button">.</button>
 					<button class="button">0</button>
 					<button class="button">/</button>
-					<button class="button">x</button>
+					<button class="button">*</button>
 				</div>
 				<div class="row-5 row">
-					<button class="button reset">Reset</button>
-					<button class="button equal">=</button>
+					<button class="button reset" id="reset">Reset</button>
+					<button class="button equal" id="result">=</button>
 				</div>
 			</div>
 		</div>
