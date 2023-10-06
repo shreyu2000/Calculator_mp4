@@ -7,6 +7,8 @@ let arr = Array.from(buttons);
 
 arr.forEach(button => {
     button.addEventListener('click', (e)=>{
+
+    try{
         if(e.target.innerHTML == '='){
             string =eval(string);
             display.value = string;
@@ -23,6 +25,11 @@ arr.forEach(button => {
         else{
             string +=e.target.innerHTML;
             display.value =string;
+        }
+    }
+        catch (error) {
+            display.value = "Error";
+            string = "";
         }
     });
 });
