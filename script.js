@@ -19,9 +19,10 @@ arr.forEach(button => {
             string = string.slice(0, -1);    //substring(0, string.length-1);
             display.value = string;
         }
+    
         else{
             string +=e.target.innerHTML;
             display.value =string;
         }
     });
-})
+});
