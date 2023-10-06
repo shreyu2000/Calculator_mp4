@@ -13,6 +13,10 @@ arr.forEach(button => {
             string =eval(string);
             display.value = string;
         }
+        else if(e.target.innerHTML == 'X'){
+            string += "*";
+            display.value += "*";
+        }
         else if(e.target.innerHTML == 'Reset'){
                 string = " ";
                 display.value ="0";
