@@ -10,12 +10,14 @@ arr.forEach(button => {
 
     try{
         if(e.target.innerHTML == '='){
+           
             string =eval(string);
             display.value = string;
         }
         else if(e.target.innerHTML == 'X'){
             string += "*";
-            display.value += "*";
+            // string = string.replace(/X/g, "*");
+            display.value += "X";
         }
         else if(e.target.innerHTML == 'Reset'){
                 string = " ";
@@ -27,6 +29,7 @@ arr.forEach(button => {
         }
     
         else{
+           
             string +=e.target.innerHTML;
             display.value =string;
         }
